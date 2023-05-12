@@ -9,6 +9,7 @@ services:
       - ./.env
 
   web:
+    image: baisefuel/infra_actions:latest
     build:
       context: ../api_yamdb
     restart: always
