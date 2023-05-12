@@ -1,7 +1,8 @@
 from django.contrib.auth import get_user_model
-from django.core.validators import (RegexValidator, MaxValueValidator,
-                                    MinValueValidator)
+from django.core.validators import (MaxValueValidator, MinValueValidator,
+                                    RegexValidator)
 from django.db import models
+
 from .utils import year_validator
 
 slug_validator_regexp = RegexValidator(
