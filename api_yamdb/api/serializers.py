@@ -123,12 +123,12 @@ class TitleSerializer(serializers.ModelSerializer):
         )
 
     def get_rating(self, obj):
-        sumOfScore = 0
+        sumofscore = 0
         try:
             reviews = obj.reviews.all()
             for review in reviews:
-                sumOfScore += review.score
-            return sumOfScore / len(reviews)
+                sumofscore += review.score
+            return sumofscore / len(reviews)
         except ZeroDivisionError:
             return None
 
