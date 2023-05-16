@@ -42,18 +42,7 @@ docker-compose exec web python manage.py migrate
 docker-compose exec web python manage.py createsuperuser
 ```
 
-На примере .env.example нужно создать файл .env
-
-```.env.example
-
-DB_ENGINE=django.db.backends.postgresql # указываем, что работаем с postgresql
-DB_NAME=postgres # имя базы данных
-POSTGRES_USER=postgres # логин для подключения к базе данных
-POSTGRES_PASSWORD=postgres # пароль для подключения к БД (установите свой)
-DB_HOST=db # название сервиса (контейнера)
-DB_PORT=5432 # порт для подключения к БД
-
-```
+Файл .env.example лежит в директории infra. На его основе нужно создать файл .env в той же директории
 
 Запустить проект:
 
