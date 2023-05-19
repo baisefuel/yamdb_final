@@ -1,4 +1,4 @@
-version: '3.8'
+version: '3.3'
 
 services:
   db:
@@ -10,9 +10,9 @@ services:
       - ./.env
 
   web:
-    image: baisefuel/infra_actions:latest
-#    build:
-#      context: ../api_yamdb
+#    image: baisefuel/infra_actions:latest
+    build:
+      context: ../api_yamdb
     restart: always
     volumes:
       - static_value:/app/static/
