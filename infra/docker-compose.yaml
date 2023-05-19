@@ -10,9 +10,9 @@ services:
       - ./.env
 
   web:
-#    image: baisefuel/infra_actions:latest
-    build:
-      context: ../api_yamdb
+    image: baisefuel/yamdb_final:latest
+#    build:
+#      context: ../api_yamdb
     restart: always
     volumes:
       - static_value:/app/static/
