@@ -44,9 +44,12 @@ docker-compose exec web python manage.py createsuperuser
 
 Файл .env.example лежит в директории infra. На его основе нужно создать файл .env в той же директории
 
+http://158.160.49.17
+
 Запустить проект:
 
 ```bash
+http://158.160.49.17
 http://localhost/
 ```
 
